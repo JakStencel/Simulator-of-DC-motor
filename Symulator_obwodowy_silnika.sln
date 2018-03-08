@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Symulator_obwodowy_silnika", ".", "{EAFCF893-9238-4B0C-BF63-4AE7B2F3093E}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_57350"
+		Debug.AspNetCompiler.PhysicalPath = "..\Symulator_obwodowy_silnika\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57350\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_57350"
+		Release.AspNetCompiler.PhysicalPath = "..\Symulator_obwodowy_silnika\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57350\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "57350"
+		SlnRelativePath = "..\Symulator_obwodowy_silnika\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EAFCF893-9238-4B0C-BF63-4AE7B2F3093E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAFCF893-9238-4B0C-BF63-4AE7B2F3093E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F5C263E8-5125-45EA-B8C9-D5F433B77C88}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,183 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+ body {
+    overflow-x: hidden; /* overflow-x określa czy "okroić" lewą bądź prawą krawędź zwartości  */
+ }
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 250px; /*0*/
+    -webkit-transition: all 0.5s ease; /* TRANSITION - ZAPEWNIA DELIKATNE PRZEJSCIE POMIEDZY WARTOSCIAMI webkit-transition to właściowosć css którą chcemy dodać; WEBKIT ODNOSI SIE DO GOOGLE CHROME*/
+    -moz-transition: all 0.5s ease; /* ease odnosi sie do przejscia efektu - najpierw wolno, potem szybko i na końcu znowu wolno; 0.5 - to czas efektu;MOZ ODNOSI SIE DO MOZILLI*/
+    -o-transition: all 0.5s ease; /* O ONDOSI SIE DO OPERY*/
+    transition: all 0.5s ease; /* trzeba również zadeklarować czas trwania efektu*/
+    height: 638px;
+}
+
+#wrapper.toggled {
+    padding-left: 0px; /* po przełączeniu robi sie padding 250px */
+}
+
+#sidebar-wrapper {
+    /*z-index: 1000; określa wartość stosu danego elementu, element o wyzszej wartości będzie przed innymi elementami - np przy określeniu "-1" przykładowo obraz byłby za tekstem*/
+    position: fixed;
+    left: 250px; /*250*/
+    width: 0; /*0*/
+    height: 100%;
+    margin-left: -250px; /*-250px*/
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+/* zapewnia responsywność sidebara - w przypadku zmniejszenia okienka, sidebar cały czas jest widoczny */
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px; /*250px*/
+}
+
+#page-content-wrapper {
+    width: 100%;
+    height: 100%;
+    position:absolute; /* pozycja absolute oznacza położenie  względem przodka a nie widoku jak w przypadku fixed */
+    padding: 15px;
+    background-image:url("../img/kontakt.jpg");
+    background-size: cover;
+}
+#page-content-wrapper > #DCmotor{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px; /*-250px*/
+}
+
+/* Sidebar Styles */
+/* lista nienumerowana */
+.sidebar-nav{
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/*Rozsuwane menu*/
+.sidebar-nav li#rozwijane ul#rozwijane_menu li{
+    visibility:hidden;
+ }
+.sidebar-nav li#rozwijane:hover ul#rozwijane_menu li{
+    visibility:visible;
+
+ }
+.sidebar-nav li#rozwijane li{
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+    text-decoration:none;
+}
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 45px; /* odległość między liniami */
+}
+.sidebar-nav li:first-child
+{
+    margin-left: -40px;
+    text-align: center;
+}
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+    margin-left: -20px;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+.sidebar-band li a span{
+    padding-right: 100px;
+}
+.sidebar-nav > .sidebar-brand { /* czytamy od prawej do lewej - stylizujemy element brand, ale tylko te, których rodzicem jest nav; */ 
+    height: 80px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+/*SI+OCIALS*/
+.sidebar-social
+{
+    position: absolute;
+    bottom: 0px;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+    text-align: center;
+}
+.iconss{
+    display: inline-block;
+    text-align: justify;
+    text-decoration: none;
+    padding: 10px;
+    height: 40px;
+     
+}
+.sidebar-social a:hover{
+    text-decoration: none;
+    background: rgba(255,255,255,0.2);
+}
+@media(min-width:768px) { /* media queries - definiowanie stylu w zależności od urządzenia; media queries sprawdza wiele rzeczy - m,in, szer i wys ekrany; szer i wys wyswietlacza; orientacje itd */
+    #wrapper {
+        padding-left: 0;
+    }
+
+    #wrapper.toggled {
+        padding-left: 250px;
+    }
+
+    #sidebar-wrapper {
+        width: 0;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+
+}
+
